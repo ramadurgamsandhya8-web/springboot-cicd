@@ -21,10 +21,6 @@ jobs:
 
       - name: Maven Build
         run: mvn clean package
-      - name: Trivy File System Scan
-        run: trivy fs .
-      - name: Maven Build
-        run: mvn clean package
 
       - name: Trivy File System Scan
         run: trivy fs .
