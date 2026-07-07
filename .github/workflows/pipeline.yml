@@ -32,7 +32,7 @@ jobs:
           mvn sonar:sonar `
             "-Dsonar.projectKey=springboot-cicd" `
             "-Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}" `
-            "-Dsonar.token=${{ secrets.SONAR_TOKEN }}"
+            "-Dsonar.login=${{ secrets.SONAR_TOKEN }}"
 
       - name: Find Trivy
         shell: powershell
